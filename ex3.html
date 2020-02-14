@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>TD1-Addresse IP</title>
+ 
+</head>
+<body>
+AdresseIP :<input type="text" id="name" name="name" required  min height="4" maxlength="15" size="10">
+<div class="bouton">
+Masque de sous reseau: <input type="text" id="name" name="name" required  min height="12" maxlength="15" size="10">
+
+  <p>
+  
+   <a href="button">Cliquez pour calculer le NetID et le HostID!</a>
+ </p>
+</div>
+NetID : <div> 
+<link rel="stylesheet" href="ex3.css"/>
+<script>
+function button {
+  if (button = 1) {
+    return "NetID";
+  } else {
+    return "NOT positive";
+  }
+}
+var AdresseIP;
+var Masque_de_sous_reseau;
+var NetID = AdresseIP & Masque_de_sous_reseau;
+document.write(NetID);
+</script>
+ </div><br>
+HostID : <div> <script>
+function button {
+  if (button = 1) {
+    return "HostID";
+  } else {
+    return "NOT positive";
+  }
+} 
+var AdresseIP;
+var Masque_de_sous_reseau;
+var HostID = AdresseIP + Masque_de_sous_reseau;
+document.write(HostID);
+</script> </div>
+</body>
+</html>
